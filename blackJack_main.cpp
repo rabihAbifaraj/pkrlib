@@ -62,10 +62,18 @@ int getScore(char * hand, int sizeOfHand)
 
 
 
-double scoreMeSomeGoodies(int scoreForNow, int goalValue, double currentProbs)
+double scoreMeSomeGoodies(int scoreForNow, int goalValue, double currentProbs, Card * availableCards)
 {
     // TODO: apply counting and index cleverness here.
     
+    // need to use goal - handScore to limit index for iteration purposes.
+    // need to do some clever recursion to get this to work correctly/
+    // Pr(getting to goal) = (Pr(firstHit)(1+(Pr(2nd))+...)) until no more counts to reach the goal
+    //
+    // need to determine corner cases for Aces. Basically, on soft scores that are greater than the goal,
+    // flip ace value to 1, and add probability for another hit. Something like that.
+
+    for ()
 }
 
 double* calculateMyProbs( int argc, char **argv)
