@@ -62,7 +62,7 @@ int getScore(char * hand, int sizeOfHand)
 
 
 
-double scoreMeSomeGoodies(int scoreForNow, int goalValue, double currentProbs, Card * availableCards)
+double scoreMeSomeGoodies(int scoreForNow, int goalValue, double currentProbs, int * availableCards)
 {
     // TODO: apply counting and index cleverness here.
     
